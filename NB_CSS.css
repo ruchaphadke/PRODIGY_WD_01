@@ -1,0 +1,65 @@
+body, html {
+     margin: 0;     /*removes default margin and makes layout consistent through other browsers */
+    padding: 0;      
+    font-family:Verdana, Geneva, Tahoma, sans-serif;            /* decides the font of text displayed*/
+}
+
+nav {
+    padding: 10px 0;              /*adds 10px of padding to top and bottom*/                         
+    background-color: hwb(0 2% 67%);         /*bg color*/
+    transition: background-color 0.3s;
+    z-index: 1000;           /*keeps the nav bar higher than any other element with high index*/
+    position: fixed;          /*indicates fixed position of the nav bar*/
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;         /*removes bullet-points from list items*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;       /*keeps content of the nav bar at center*/
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+    background-color: hwb(54 56% 21%);
+    padding: 5px 15px;
+    border-radius: 4%;            /*appearance border radius of the hovering box*/
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+#home {
+    background-color:burlywood;   /*bg-color of home page*/
+}
+
+#contact {
+    background-color:burlywood;    /*bg-color of contact page*/
+}
+
+#services {
+    background-color:burlywood;     /*bg-color of services page*/
+}
+
+#about {
+    background-color:burlywood;       /*bg-color of about page*/
+}
+
+.d-none{
+   display:none;          /*hide other HTML elements from current page*/
+}
